@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameDisplay"></canvas>
+    <div class="ui">
+        <canvas id="nextDisplay"></canvas><br>
+        <button onclick="gameStart();">PLAY</button>
+        <p>Score: <span id="score">0</span></p>
+    </div>
+    <div id="gameOver">
+        <h4>GAME OVER</h4>
+        <h5>SCORE</h5>
+        <p id="gScore">1379</p>
+        <h5>HIGH SCORE</h5>
+        <p id="hScore">3979</p>
+        <button onclick="gameStart();">RESTART</button>
+    </div>
+    
+
+    
+
+    <script type="text/javascript" src="constants.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
